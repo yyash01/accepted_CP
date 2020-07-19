@@ -897,6 +897,22 @@
     ],
     "timestamp": "Feb/08/2021 00:24"
   },
+  "CF87367607": {
+    "contest_id": 1385,
+    "language": "GNU C++17",
+    "path": "codeforces\\1385\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Restore the Permutation by Merger",
+    "problem_url": "https://codeforces.com/contest/1385/problem/B",
+    "submission_id": "CF87367607",
+    "submission_url": "https://codeforces.com/contest/1385/submission/87367607",
+    "tags": [
+      "greedy",
+      "*800"
+    ],
+    "timestamp": "Jul/19/2020 21:00"
+  },
   "CF87377877": {
     "contest_id": 1385,
     "language": "GNU C++17",
