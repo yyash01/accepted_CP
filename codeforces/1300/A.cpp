@@ -38,33 +38,23 @@ void booster()
 void solve()
 {
 	int n; cin >> n;
-	int pro = 1, sum = 0, num_zero = 0;
+	int sum = 0, num_zero = 0;
 	mk(a, n, int);
 	FOR(n) {
 		cin >> a[i];
 		sum = sum + a[i];
 		if (a[i] == 0) {
-			pro = 0;
 			num_zero++;
-			a[i] = 1;
 		}
 	}
 	int steps = 0;
-	if (sum != 0 and pro != 0) {
-		cout << 0 << endl;
+
+	steps += num_zero;
+	sum += num_zero;
+	if (sum == 0) {
+		steps++;
 	}
-	else
-	{
-		sum = 0; //mistake done rigrously
-		steps += num_zero;
-		FOR(n) {
-			sum += a[i];
-		}
-		if (sum == 0) {
-			steps++;
-		}
-		cout << steps << endl;
-	}
+	cout << steps << endl;
 }
 int32_t main()
 {
@@ -74,3 +64,4 @@ int32_t main()
 		solve();
 	}
 }
+
