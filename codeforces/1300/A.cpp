@@ -42,31 +42,27 @@ void solve()
 	mk(a, n, int);
 	FOR(n) {
 		cin >> a[i];
+		sum = sum + a[i];
 		if (a[i] == 0) {
 			pro = 0;
 			num_zero++;
 			a[i] = 1;
 		}
-		else {
-			pro = pro * a[i];
-			sum = sum + a[i];
-		}
 	}
 	int steps = 0;
 	if (sum != 0 and pro != 0) {
 		cout << 0 << endl;
-		return;
 	}
 	else
 	{
-		sum = 0;
-		steps = num_zero;
+		sum = 0; //mistake done rigrously
+		steps += num_zero;
 		FOR(n) {
 			sum += a[i];
 		}
-		if (sum == 0)
+		if (sum == 0) {
 			steps++;
-
+		}
 		cout << steps << endl;
 	}
 }
