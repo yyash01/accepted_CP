@@ -37,55 +37,43 @@ void booster()
 }
 
 
-void solve()
-{
-	int n, k; cin >> n >> k;
-	int a[n];
-	FOR(n) {cin >> a[i];}
-	int sum = 0;
-	sort(a, a + n);
-	for (int i = 1; i < n ; i++)
-	{
-		if (a[i] > k)
-		{
-			break; //now power is lost.
-		}
-		else
-		{
-			while (a[i] + a[0] <= k)
-			{
-				a[i] += a[0];
-				sum++;
-			}
-		}
-	}
-	cout << sum << endl;
-
-}
-
 // void solve()
 // {
 // 	int n, k; cin >> n >> k;
 // 	int a[n];
 // 	FOR(n) {cin >> a[i];}
-// 	int count = 0;
-// 	sort(a, a + n);
-// 	for (int i = n - 1; i > 0; i--)
+// 	int sum = 0;
+// 	for (int i = 0; i < n - 1; i++)
 // 	{
-// 		count += (k - a[i]) / a[0];
+// 		sum += (k - a[i]);
 // 	}
-// 	cout << count << endl;
-// 	// for(int i=0;i<n-1;i++)
-// 	// {
-// 	// 	//if(a[i]<=k)
-// 	// 	//continue;
-// 	// 	if(a[i]<=k)
-// 	// 	{
-
-// 	// 	}
-// 	// }
-
+// 	int x = k - a[n - 1];
+// 	cout << sum - x << endl;
 // }
+
+void solve()
+{
+	int n, k; cin >> n >> k;
+	int a[n];
+	FOR(n) {cin >> a[i];}
+	int count = 0;
+	sort(a, a + n);
+	for (int i = n - 1; i > 0; i--)
+	{
+		count += (k - a[i]) / a[0];
+	}
+	cout << count << endl;
+	// for(int i=0;i<n-1;i++)
+	// {
+	// 	//if(a[i]<=k)
+	// 	//continue;
+	// 	if(a[i]<=k)
+	// 	{
+
+	// 	}
+	// }
+
+}
 int32_t main()
 {
 	booster();
