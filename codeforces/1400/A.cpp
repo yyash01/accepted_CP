@@ -42,10 +42,9 @@ void solve()
 	int n; cin >> n;
 	string s; cin >> s;
 	// string length = 2*n-1
-	char x = s[n - 1];
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < s.size(); i += 2)
 	{
-		cout << x;
+		cout << s[i];
 	}
 	cout << endl;
 }
