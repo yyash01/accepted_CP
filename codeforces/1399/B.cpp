@@ -59,6 +59,18 @@ void solve()
 	}
 
 	int count = 0;
+	// int count2
+
+	// vector<pii> ans1;
+	// vector<pii> ans2;
+
+	// FOR(n)
+	// {
+	// 	ans1.PB(MP(a[i],b[i]));
+	// 	ans2.PB(MP(b[i],a[i]));
+	// }
+	// sort(ans1.begin(),ans1.end());
+	// sort(ans2.begin(),ans2.end());
 
 	for (int i = 0; i < n; i++)
 	{
