@@ -897,6 +897,25 @@
     ],
     "timestamp": "Feb/08/2021 00:24"
   },
+  "CF97901058": {
+    "contest_id": 266,
+    "language": "GNU C++17",
+    "path": "codeforces\\266\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Queue at the School",
+    "problem_url": "https://codeforces.com/contest/266/problem/B",
+    "submission_id": "CF97901058",
+    "submission_url": "https://codeforces.com/contest/266/submission/97901058",
+    "tags": [
+      "constructive algorithms",
+      "graph matchings",
+      "implementation",
+      "shortest paths",
+      "*800"
+    ],
+    "timestamp": "Nov/08/2020 13:20"
+  },
   "CF97903659": {
     "contest_id": 318,
     "language": "GNU C++17",
