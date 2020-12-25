@@ -46,7 +46,8 @@ void solve()
 	for (int i = 0; i < 26; i++)
 	{
 		int x; cin >> x;
-		mp[97+i] = x;
+		char tt = 97 + i;
+		mp[tt] = x;
 	}
 	int mx = -1;
 	for (auto it : mp)
