@@ -45,33 +45,32 @@ void solve()
 {
 	int n; cin >> n;
 	int a[n + 10];
-	int dp[n]; //dp array to store results
+	int b[n];
 	for (int i = 0; i < n; i++)
 	{
 		cin >> a[i];
-		dp[i] = 0;
+		b[i] = 0;
 	}
-	dp[n - 1] = a[n - 1];
+	b[n - 1] = a[n - 1];
 	for (int i = n - 2; i >= 0; i--)
 	{
 		if (a[i] + i > n - 1)
 		{
-			dp[i] = a[i];
+			b[i] = a[i];
 		}
 		else
 		{
 			int tt = a[i];
 
-			dp[i] = a[i] + dp[i + tt];
+			b[i] = a[i] + b[i + tt];
 		}
 	}
 	int ans = 0;
 	FOR(n)
 	{
-		ans = max(ans, dp[i]);
+		ans = max(ans, b[i]);
 	}
 	cout << ans << "\n";
-
 }
 int32_t main()
 {
